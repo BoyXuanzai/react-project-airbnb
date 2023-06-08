@@ -1,25 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { memo } from 'react';
+// eslint-disable-next-line no-unused-vars
+import HelloWorld from 'components/helloWorld';
 
-function App() {
+const App = memo(() => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <HelloWorld />
     </div>
   );
-}
+});
 
 export default App;
